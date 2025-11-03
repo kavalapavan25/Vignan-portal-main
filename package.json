@@ -1,0 +1,20 @@
+{
+  "name": "vignan-website",
+  "version": "1.0.0",
+  "description": "Full-stack college website for Vignan Institute of Technology and Science",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm run dev --prefix client -- --port 3000",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
